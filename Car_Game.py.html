@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Car_Game.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000;}
+.s1 { color: #008080; font-weight: bold;}
+.s2 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Car_Game.py</font>
+</center></td></tr></table>
+<pre>command = <span class="s1">&quot;&quot;</span>
+started = <span class="s2">False</span>
+<span class="s2">while True</span>:
+    command = input(<span class="s1">'&gt;'</span>).lower()
+    <span class="s2">if </span>command == <span class="s1">&quot;start&quot;</span>:
+        <span class="s2">if </span>started:
+            print(<span class="s1">&quot;Car is already started!&quot;</span>)
+        <span class="s2">else</span>:
+            started = <span class="s2">True</span>
+            print(<span class="s1">&quot;Car started....&quot;</span>)
+    <span class="s2">elif </span>command == <span class="s1">&quot;stop&quot;</span>:
+        <span class="s2">if not </span>started:
+            print(<span class="s1">&quot;Car is already stopped!&quot;</span>)
+        <span class="s2">else</span>:
+            started = <span class="s2">False</span>
+            print(<span class="s1">&quot;Car stopped.&quot;</span>)
+    <span class="s2">elif </span>command == <span class="s1">&quot;quit&quot;</span>:
+        <span class="s2">break</span>
+    <span class="s2">elif </span>command == <span class="s1">&quot;help&quot;</span>:
+        print(<span class="s1">&quot;&quot;&quot; 
+Start - to start the car. 
+Stop - to stop the car. 
+Quit - to quit. 
+        &quot;&quot;&quot;</span>)
+    <span class="s2">else</span>:
+        print(<span class="s1">'Sorry, I do not understand that.'</span>)
+</pre>
+</body>
+</html>
